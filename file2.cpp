@@ -1,11 +1,11 @@
 #include<iostream>
 namespace sycs4
 {
-    int sum()
+    int sub()
 
 }
- int main ()
+ 'int main'():
  {
-    sycs4::sum();
+    sycs4::sub();
     return 0;
  }
