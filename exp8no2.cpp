@@ -20,7 +20,7 @@ public:
         // Create an object to return
         Distance d3;
         d3.feet = this->feet + d2.feet;
-        d3.inch = this->inch + d2.inch;
+        d3.inch = this->inch - d2.inch;
 
         // Return the resulting object
         return d3;

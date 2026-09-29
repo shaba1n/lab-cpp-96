@@ -3,7 +3,7 @@ using namespace std;
 
 class Distance {
 public:
-    int feet, inch;
+    int feet, inch;//data members
 
     // Constructor to initialize the object's value
     Distance(int f, int i) {
@@ -12,19 +12,30 @@ public:
     }
 
     // Overloading (-) operator to perform decrement operation on Distance object
-    void operator-() {
-        feet--;
+    void operator-()
+    {
+        feet=feet-3;
         inch--;
         cout << "\nFeet & Inches(Decrement): " << feet << "'" << inch;
     }
+    void operator+()
+     {
+         feet=feet+3;
+        inch--;
+        cout << "\nFeet & Inches(Decrement): " << feet << "'" << inch;
+    }
+
+     }
 };
 
 // Driver Code
 int main() {
     Distance d1(8, 9);
+    Distance d2(10, 11)
 
     // Use (-) unary operator on a single operand
     -d1;
+    +d2;
 
     return 0;
 }
